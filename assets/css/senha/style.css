@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 :root {
-    /*texto*/
-    --span-color: #0096c7;
-    --span2-color: #90e0ef;
-    --h1-color: #141b79;
-    --h11-color: #4398f8;
-    --p-color: #03045e;
-    --p2-color: #0b0a13;
-  
-    /*botões*/
-    --btn1-color: #023e8a;
-    --btn2-color: #6ad2e7;
-  
-    /*background*/
-    --bg-color: #f4effa;
-  
-    /*header e outras coisas*/
-    --header-color: #f4effa;
-    --miniheader-color: #ade8f4;
-  }
+  /*texto*/
+  --span-color: #0096c7;
+  --span2-color: #90e0ef;
+  --h1-color: #141b79;
+  --h11-color: #4398f8;
+  --p-color: #03045e;
+  --p2-color: #0b0a13;
 
-  /* navbar */
+  /*botões*/
+  --btn1-color: #023e8a;
+  --btn2-color: #6ad2e7;
+
+  /*background*/
+  --bg-color: #f4effa;
+
+  /*header e outras coisas*/
+  --header-color: #f4effa;
+  --miniheader-color: #ade8f4;
+}
+
+/* navbar */
 .nav {
   height: 50px;
   width: 100%;
@@ -84,133 +84,144 @@
   height: 34px;
   text-align: center;
   background-color: var(--miniheader-color);
-
 }
 
-.img-header{
+.img-header {
   max-width: 24px;
 }
 
-  /*------------- Global ------------*/
+/*------------- global ------------*/
 
-  body, header{
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    color: var(--p2-color);
-    overflow-x: hidden;
-    max-width: auto;
-    height: auto;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+body,
+header {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: var(--p2-color);
+  overflow-x: hidden;
+  max-width: auto;
+  height: auto;
+}
 
-  /*----------- Página -----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .container{
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    height:600px;
-  }
+/*----------- página -----------*/
 
-  .item{
-    margin:30px;
-    text-align: center;
-    width: 30%;
-  }
+.container {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+}
 
-  .form{
-    align-items: center;
-    background-color: var(--span-color);
-    padding: 10px;
-    height: auto;
-    border-radius: 10px;
-    color: var(--p-color);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    
-  }
+.item {
+  margin: 30px;
+  text-align: center;
+  width: 30%;
+}
 
-  .item1, .item2, .item3, .error, .item5{
-    margin:5px;
-  }
+/*formulário*/
+.form {
+  align-items: center;
+  background-color: var(--span-color);
+  padding: 10px;
+  height: auto;
+  border-radius: 10px;
+  color: var(--p-color);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 
-  input{
-    width:90%;
-    margin: 10px;
-    height: 35px;
-    border-radius: 5px;
-  }
+.item1,
+.item2,
+.item3,
+.error,
+.item5 {
+  margin: 5px;
+}
 
-  .error, .error2{
-    color:red;
-    display: none;
-  }
+input {
+  width: 90%;
+  margin: 10px;
+  height: 35px;
+  border-radius: 5px;
+}
 
-  .btn, .btn2{
-    width: 50%;
-    border-color: var(--btn1-color);
-    background-color: var(--btn2-color);
-    border-radius: 30px;
-    height: 40px;
-  }
+.error,
+.error2 {
+  color: rgb(252, 63, 63);
+  display: none;
+}
 
-  .btn:hover, .btn2:hover{
-    border-color: var(--btn2-color);
-    background-color: var(--btn1-color);
-    color: var(--header-color);
-    cursor: pointer;
-  }
+.btn,
+.btn2 {
+  width: 50%;
+  border-color: var(--btn1-color);
+  background-color: var(--btn2-color);
+  border-radius: 30px;
+  height: 40px;
+  border: none;
+  color: var(--bg-color);
+}
 
-  h1{
-    font-size: 40pt;
-  }
+button {
+  font-family: "Poppins", sans-serif;
+}
 
-  .item5, .btn2{
-    display:none;
-  }
+.btn:hover,
+.btn2:hover {
+  border: none;
+  border-color: var(--btn2-color);
+  background-color: var(--btn1-color);
+  color: var(--header-color);
+  cursor: pointer;
+}
+
+.item5,
+.btn2 {
+  display: none;
+}
 
 /*footer*/
 footer {
-    height: 260px;
-    padding: 20px;
-    width: 100%;
-    background-color: var(--btn1-color);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    text-align: center;
-    color: var(--bg-color)
-  }
-  
-  .footer-info {
-    color: var(--bg-color);
-  }
-  
-  .footer-link {
-    text-decoration: none;
-    color: var(--btn2-color);
-  }
-  
-  .contato-info {
-    color: var(--span2-color);
-  }
+  height: 260px;
+  padding: 20px;
+  width: 100%;
+  background-color: var(--btn1-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  color: var(--bg-color);
+}
 
-  footer ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
+.footer-info {
+  color: var(--bg-color);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--btn2-color);
+}
+
+.contato-info {
+  color: var(--span2-color);
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
