@@ -191,7 +191,7 @@ input[type="number"] {
 }
 
 #CEP {
-  width: auto;
+  width: 30%;
 }
 
 #cidade {
@@ -203,7 +203,7 @@ input[type="number"] {
 }
 
 #rua {
-  width: 50%;
+  width: 40%;
 }
 
 #uf {
