@@ -8,7 +8,7 @@
     <script src ="assets/js/cadastro/viacep.js"></script>
     <title>Cadastro</title>
 </head>
-
+<body>
 <!---header-->
 <header>
   <div class="mini-header">
@@ -19,29 +19,28 @@
   </div>
 
   <!--navbar-->
-  <div class="nav">
-    <input type="checkbox" id="nav-check" />
-    <div class="nav-header">
-      <div class="nav-title">
-        <a class="navbar-brand" href="index.html">
-          <img class="image" src="assets/img/logo/logo 3.png" alt="" />
-        </a>
-      </div>
+
+  <nav>
+    <div class="nav-title">
+      <a class="navbar-brand" href="index.html">
+      <img class="image" src="assets/img/logo/logo 3.png" alt=""/>
+      </a>
     </div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="serviços.html">Serviços</a>
-      <a href="sobre nós.html">Sobre nós</a>
-      <a href="depoimentos.html">Depoimentos</a>
-      <a href="#">Para Você</a>
-      <a href="#">Para Empresas</a>
-      <a href="#">Fale Conosco</a>
-      <a href="login.html">Login</a>
-    </div>
-  </div>
+    <button class="nav-btn">&#9776;</button>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="serviços.html">Serviços</a></li>
+      <li><a class="nav-link" href="sobre nós.html">Sobre nós</a></li>
+      <li><a class="nav-link" href="depoimentos.html">Depoimentos</a></li>
+      <li><a class="nav-link" href="candidatos.html">Para Você</a></li>
+      <li><a class="nav-link" href="para empresas.html">Para Empresas</a></li>
+      <li><a class="nav-link" href="faq.html">F.A.Q</a></li>
+      <li><a class="nav-link" href="login.html">Login</a></li>
+</ul>
+</nav>
 </header>
 
-<body>
+<!--cadastro-->
     <section class = "container">
             <form class = "form" method="get" action=".">
                 <h2>Faça seu cadastro.</h2>
@@ -54,8 +53,12 @@
                 <input type="text" name="email" id="email" placeholder="Digite um e-mail válido"/>
               </div>
               <div class="conteudo">
+                <input type="password" name = "senha" id="senha" placeholder="Crie uma senha">
+                <input type="password" name = "confirmação de senha" id="confsenha" placeholder="Repita sua senha">
+              </div>
+              <div class="conteudo">
                 <input type="number" name="rg" id="rg" maxlength = "9" placeholder="RG"/>
-                <input name="cep" type="number" id="cep" value="" size="10" maxlength="9"
+                <input name="cep" type="number" id="cep" value="" maxlength="9"
                onblur="pesquisacep(this.value);" placeholder="CEP"/>
                 <input name="rua" type="text" id="rua" size="60" placeholder="Rua"/></label></div>
                 <div class="conteudo">
@@ -72,6 +75,8 @@
               </div>
             </form>
       </section>
+      <!--fim do cadastro-->
+
       <!--footer-->
     <footer class="footer">
           <!--para candidatos-->
@@ -142,6 +147,9 @@
             © 2022 Copyright: <span><strong>FRONTENDERS</strong></span>
           </div>
       </footer>
+      <!--fim do footer-->
+
+      <!--script-->
       <script src = "assets/js/cadastro/cadastro.js"></script>
 </body>
 </html>

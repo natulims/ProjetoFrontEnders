@@ -89,7 +89,6 @@ span {
   padding: 0 25px;
   font-size: 16px;
   font-weight: 500;
-  text-align: center;
   line-height: 55px;
   border-radius: 5px;
   background-image: linear-gradient(to right, #2b75e4 0%, #238fb9 100%);
@@ -117,96 +116,122 @@ span {
 
 /* -------------- fim das animações ---------- */
 
-/* ----------- navbar----------- */
-.navbar-area {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* navbar */
+
+nav {
+  height: auto;
   width: 100%;
-  z-index: 9;
-}
-
-.sticky {
-  position: fixed;
-  background-color: #fff;
-  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.5);
-}
-
-.navbar {
   position: relative;
-  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav, .nav-links{
+  display:flex;
+  flex-direction: row;
 }
 
 .navbar-brand .image {
   max-width: 150px;
 }
 
-.navbar-light .navbar-toggler {
-  color: transparent;
-  border-color: transparent;
+.navbar-brand{
+  text-decoration: none;
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
+.nav-title {
+  font-size: 22px;
+  color: var(--btn1-color);
+  padding: 10px 10px 10px 10px;
 }
 
-.navbar-nav .nav-item {
-  position: relative;
-  margin-left: 40px;
+.nav-links{
+  list-style: none;
+  padding: 0;
+  overflow:hidden;
+  transition: 0.5s;
 }
 
-.navbar-nav .nav-item .nav-link {
-  position: relative;
-  padding: 10px 0;
-  font-size: 18px;
-  font-weight: 400;
+.nav-links > li > a {
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
   color: var(--btn1-color);
 }
 
-.navbar-nav .nav-item .nav-link.active,
-.navbar-nav .nav-item .nav-link:hover {
+.nav-links > li{
+  padding: 5px 5px;
+}
+
+.nav-links > li, .nav-btn{
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav > .nav-links > a:hover {
   color: var(--btn2-color);
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
-.navbar-nav .nav-item .nav-link::before {
-  content: "";
+.nav-btn{
+  background: transparent;
+  border:none;
+  font-size: 30px;
+  color: var(--p-color);
   position: absolute;
-  width: 8px;
-  height: 8px;
-  bottom: 0;
-  left: 50%;
-  border-radius: 50%;
-  background-color: #38424d;
-  opacity: 0;
-  transition: all 0.3 ease-out 0s;
+  right: 10px;
+  top: 10px;
+  display:none
 }
 
-/*media query*/
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
-  .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 5px 12px;
-    background-color: #fff;
-    box-shadow: 0 15px 20px 0 rgb(0 0 0 / 10%);
-  }
+.nav-btn:focus ~ .nav-links{
+  height: auto;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px),
-  (max-width: 767px) {
-  .navbar-nav .nav-item .nav-link::before {
-    position: relative;
+
+@media (max-width:1050px) {
+  nav, .nav-links{
+      flex-direction: column;
+      align-items: unset;
   }
+  
+
+  .nav-links{
+      text-align: center;
+      height:0
+  }
+
+  nav{
+      padding-top: 10px;
+  }
+
+  .nav-btn{
+      display: flex;
+  }
+
+
 }
+
+.nav-link {
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: var(--btn1-color);
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: var(--btn2-color);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/*fim - navbar*/
 
 /*mini header*/
 .mini-header {
   padding-top: 2px;
   width: 100%;
-  height: 34px;
+  height: auto;
   text-align: center;
   background-color: var(--miniheader-color);
 
@@ -215,6 +240,7 @@ span {
 .img-header{
   max-width: 24px;
 }
+
 
 .header-hero-content .header-title {
   font-size: 42px;
@@ -517,14 +543,31 @@ span {
 }
 
 /*newsletter*/
+.container-newsletter{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
 .newsletter {
   display: flex;
   background-color: var(--miniheader-color);
   font-family: "Figtree", sans-serif;
   width: 70%;
   padding: 4rem;
-  margin: auto;
+  margin: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  flex-direction: row;
   /* this margin is for this visualization */
+}
+
+@media (max-width:1050px){
+  .newsletter{
+    flex-direction: column;
+    width: 90%;
+  }
 }
 
 .newsText {
@@ -532,15 +575,34 @@ span {
   text-align: right;
   width: 45%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+@media (max-width:1050px){
+  .newsText{
+    width: 90%;
+  }
 }
 
 .newsText h1 {
   font-weight: 600;
 }
 
+.newsletter p {
+  text-align: right;
+}
+
 .newsText img {
   width: 90%;
   margin-top: 1rem;
+}
+
+@media (max-width:1050px){
+  .newsText img{
+    margin-bottom: 20px;
+  }
 }
 
 .newsSign {
@@ -550,17 +612,25 @@ span {
   padding: 4rem;
 }
 
+@media (max-width:1050px){
+  .newsSign{
+    width: 90%;
+  }
+}
+
 form {
   display: flex;
   flex-direction: column;
   text-align: left;
   color: var(--btn1-color);
   font-size: 1rem;
+  width: 100%;
 }
 
 .input-field {
   position: relative;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 input {
@@ -598,25 +668,31 @@ button {
 
 /*fim - newsletter*/
 
-/*footer*/
-footer {
-  margin-top: 5rem;
+ /*footer*/
+ footer {
   height: 250px;
   width: 100%;
   background-color: var(--btn1-color);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  color: var(--bg-color)
 }
 
-.footer {
-  text-align: center;
-  color: var(--bg-color);
+@media (max-width:1050px){
+  footer{
+    height: auto;
+    padding: 20px;
+  }
 }
 
 .footer-info {
   color: var(--bg-color);
+  margin: 20px;
 }
 
 .footer-link {
@@ -624,16 +700,16 @@ footer {
   color: var(--btn2-color);
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
-  gap: 10px 40px;
-  margin-left: 37rem;
+.footer-link:hover {
+  color: var(--span-color);
 }
 
 .contato-info {
   color: var(--span2-color);
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
