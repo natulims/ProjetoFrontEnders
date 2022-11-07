@@ -55,6 +55,9 @@ a {
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  text-align: center;
+  margin-left: 25rem;
+  margin: 30px;
 }
 
 h5 {
@@ -147,8 +150,32 @@ span {
   max-width: 24px;
 }
 
-/*vagas para candidatos*/
-/*fim das vagas para candidatos*/
+/*vagas*/
+.vagas {
+border-style: groove;
+  border-color: #023e8a;
+  border-radius: 30px;
+  padding: 30px;
+  margin: 10px;
+}
+
+.vaga_titulo{
+  text-align: center;
+}
+
+.mini_text{
+  font-size: 14px;
+  text-align: center;
+}
+
+.vaga_lista {
+  list-style:circle;
+}
+
+.vaga_span{
+  color: #525cee;
+}
+/*vagas*/
 
 /*newsletter*/
 .newsletter {
