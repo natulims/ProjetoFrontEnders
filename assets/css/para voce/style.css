@@ -153,12 +153,17 @@ span {
 /*vagas*/
 .vagas {
 border-style: groove;
-  border-color: #023e8a;
+  border-color: rgba(45, 127, 235, 0.781);
   border-radius: 30px;
   padding: 30px;
   margin: 10px;
 }
 
+.vagas:hover{
+background-color: rgba(119, 172, 241, 0.274);
+border-color: rgba(119, 172, 241, 0.274);
+color: #023e8a;
+}
 .vaga_titulo{
   text-align: center;
 }
@@ -174,6 +179,10 @@ border-style: groove;
 
 .vaga_span{
   color: #525cee;
+}
+
+ul:hover{
+  color: #43b6f8;
 }
 /*vagas*/
 
