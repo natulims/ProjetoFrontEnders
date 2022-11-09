@@ -17,3 +17,6 @@ Foram criadas várias páginas com conteúdos diferentes, cada uma com sua funç
 <p align=justify><strong>HTML</strong>: toda a base do site foi estruturada com html semântico, prezando pela boa organização do código.<br>
 <strong>CSS</strong>: foi utilizado bootstrap para melhorar visualmente nossa página, trazendo um arquivo com olhar mais profissional.<br>
 <strong>JavaScript</strong>:</p> todas as interações foram criadas utilizando Javascript, utilizamos da API de CEP para o formulário e outras interações ligadas ao bootstrap.
+
+
+https://www.canva.com/design/DAFQJrdmIc4/GrNWF_buAbq82CMmiNmcNQ/view?utm_content=DAFQJrdmIc4&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent
