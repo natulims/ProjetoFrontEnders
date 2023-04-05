@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/imagens/logo1.png" />
+    <title>FrontEnders</title>
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--boxicons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--tailwind-->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="/assets/css/about/about.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav
+      class="relative px-4 py-4 flex justify-between items-center overflow-hidden"
+    >
+      <!--logo-->
+      <a class="leading-none" href="/">
+        <img class="w-10" src="assets/imagens/logo1.png" alt="logo" />
+      </a>
+
+      <!--div escondida em telas grandes-->
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-[#44195e] p-3">
+          <svg
+            class="block h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!--menu-->
+      <ul
+        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+      >
+        <li>
+          <a
+            class="text-[#44195e] font-bold capitalize text-lg hover:text-[#7734E7]"
+            href="/index.html"
+            >home</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-[#44195e] font-bold capitalize text-lg hover:text-[#7734E7]"
+            href="/pages/about.html"
+            >sobre nós</a
+          >
+        </li>
+
+        <li>
+          <a
+            class="text-[#44195e] font-bold capitalize text-lg hover:text-[#7734E7]"
+            href="/pages/job.html"
+            >vagas</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-[#44195e] font-bold capitalize text-lg hover:text-[#7734E7]"
+            href="/pages/faq.html"
+            >f.a.q</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-[#44195e] font-bold capitalize text-lg hover:text-[#7734E7]"
+            href="/pages/contact.html"
+            >contato</a
+          >
+        </li>
+      </ul>
+      <a
+        class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 hover:text-[#7734e7] uppercase text-sm text-[#44195e] font-bold rounded-xl transition duration-200"
+        href="/pages/login.html"
+        >login</a
+      >
+      <a
+        class="hidden lg:inline-block py-2 px-6 uppercase hover:bg-[#44195e] bg-[#7734e7] text-sm text-white font-bold rounded-xl transition duration-200"
+        href="/pages/signup.html"
+        >cadastro</a
+      >
+    </nav>
+
+    <!--menu responsivo-->
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-white"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <img class="w-10" src="assets/imagens/logo1.png" alt="" />
+          </a>
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-[#44195e] cursor-pointer hover:text-[#7734e7]"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-[#44195e] hover:text-[#7734e7] rounded"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-[#44195e] hover:text-[#7734e7] rounded"
+                href="/pages/about.html"
+                >Sobre Nós</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-[#44195e] hover:text-[#7734e7] rounded"
+                href="pages/job.html"
+                >Vagas</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-[#44195e] hover:text-[#7734e7] rounded"
+                href="pages/faq.html"
+                >F.A.Q</a
+              >
+            </li>
+
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-[#44195e] hover:text-[#7734e7] rounded"
+                href="pages/contact.html"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6">
+            <a
+              class="text-[#44195e] hover:text-[#7734e7] block px-4 py-3 mb-3 text-lg text-center font-semibold leading-none rounded-xl"
+              href="#"
+              >Login</a
+            >
+            <a
+              class="block px-4 py-3 mb-2 leading-loose text-lg text-center text-white font-semibold hover:bg-[#44195e] bg-[#7734e7] rounded-xl"
+              href="#"
+              >Cadastro</a
+            >
+          </div>
+          <!-- <p class="my-4 text-xs text-center text-gray-400">
+      <span>Copyright © 2021</span>
+    </p> -->
+        </div>
+      </nav>
+    </div>
+
+    <!--conteudo-->
+    <main class="w-full">
+      <h1 class="text-4xl text-center">Sobre a Plataforma</h1>
+      <!--sobre a equipe-->
+      <article class="flex justify-center">
+        <div class="text-justify text-lg mt-5 w-[80rem] px-10 py-15">
+          Fundada em outubro de 2022, a FrontEnders foi criada com o propósito
+          de ajudar diversos candidatos a conseguirem seu novo emprego. Nossa
+          missão é mudar a vida das pessoas através do trabalho, investindo em
+          serviços que podem facilitar a busca de um novo emprego. Sendo assim,
+          aumentamos as chances dos candidatos a atingirem seus objetivos, de
+          forma gratuita ou assinando a plataforma.
+        </div>
+      </article>
+
+    <section class="grid grid-cols-1 lg:grid-cols-3 w-full">
+          <!--cards-->
+          <article
+          class="relative mt-32 max-w-sm mx-auto md:max-w-2xl min-w-0 break-words  bg-white w-[20rem] mb-6 shadow-lg rounded-xl"
+        >
+          <div class="px-6">
+            <div class="flex flex-wrap justify-center">
+              <div class="w-full flex justify-center">
+                <div class="relative">
+                  <img
+                    class="shadow-lg rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]"
+                    src="/assets/imagens/natulia.png"
+                    alt="foto da natalia"
+                  />
+                </div>
+              </div>
+              <div class="w-full text-center mt-20">
+                  <div class="flex justify-center lg:pt-4 pt-8 pb-0">
+                    <div class="p-3 text-center">
+                      <span
+                        class="text-xl font-bold block uppercase tracking-wide text-slate-700"
+                        >Natalia</span
+                      >
+                      <span class="text-lg text-slate-400">Gestora de Conhecimento</span>
+                      <ul class="flex flex-row gap-4 ml-10">
+                          <li class="rounded-full hover:bg-[#7734e7] bg-[#47294c] py-2 px-2.5 transition ease-out delay-75"><a href=""><i class='bx bxl-github text-4xl text-white' ></i></a></li>
+                          <li class="rounded-full hover:bg-[#7734e7] bg-[#47294c] py-2 px-2.5 transition ease-out delay-75"><a href=""><i class='bx bxl-linkedin text-4xl text-white' ></i></a></li>
+                      </ul>
+                    </div>
+            </div>
+          </div>
+        </article>
+  
+              <!--cards-->
+              <article
+              class="relative mt-32 max-w-sm mx-auto md:max-w-2xl min-w-0 break-words  bg-white w-[20rem] mb-6 shadow-lg rounded-xl"
+            >
+              <div class="px-6">
+                <div class="flex flex-wrap justify-center">
+                  <div class="w-full flex justify-center">
+                    <div class="relative">
+                      <img
+                        class="shadow-lg rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]"
+                        src="/assets/imagens/camila.png"
+                        alt="foto da camila"
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full text-center mt-20">
+                      <div class="flex justify-center lg:pt-4 pt-8 pb-0">
+                        <div class="p-3 text-center">
+                          <span
+                            class="text-xl font-bold block uppercase tracking-wide text-slate-700"
+                            >camila</span
+                          >
+                          <span class="text-lg text-slate-400">Gestora de Gente</span>
+                          <ul class="flex flex-row gap-4">
+                              <li class="rounded-full hover:bg-[#7734e7] bg-[#47294c] py-2 px-2.5 transition ease-out delay-75"><a href=""><i class='bx bxl-github text-4xl text-white' ></i></a></li>
+                              <li class="rounded-full hover:bg-[#7734e7] bg-[#47294c] py-2 px-2.5 transition ease-out delay-75"><a href=""><i class='bx bxl-linkedin text-4xl text-white' ></i></a></li>
+                          </ul>
+                        </div>
+                </div>
+              </div>
+            </article>
+  
+                  <!--cards-->
+        <article
+        class="relative mt-32 max-w-sm mx-auto md:max-w-2xl min-w-0 break-words  bg-white w-[20rem] mb-6 shadow-lg rounded-xl"
+      >
+        <div class="px-6">
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full flex justify-center">
+              <div class="relative">
+                <img
+                  class="shadow-lg rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]"
+                  src="/assets/imagens/ana beatriz.png"
+                  alt="foto da ana beatriz"
+                />
+              </div>
+            </div>
+            <div class="w-full text-center mt-20">
+                <div class="flex justify-center lg:pt-4 pt-8 pb-0">
+                  <div class="p-3 text-center">
+                    <span
+                      class="text-xl font-bold block uppercase tracking-wide text-slate-700"
+                      >ana beatriz</span
+                    >
+                    <span class="text-lg text-slate-400">Co-Facilitadora</span>
+                    <ul class="flex flex-row gap-4">
+                        <li class="rounded-full hover:bg-[#7734e7] bg-[#47294c] py-2 px-2.5 transition ease-out delay-75"><a href=""><i class='bx bxl-github text-4xl text-white' ></i></a></li>
+                        <li class="rounded-full hover:bg-[#7734e7] bg-[#47294c] py-2 px-2.5 transition ease-out delay-75"><a href=""><i class='bx bxl-linkedin text-4xl text-white' ></i></a></li>
+                    </ul>
+                  </div>
+          </div>
+        </div>
+      </article>
+  
+            <!--cards-->
+            <article
+            class="relative mt-32 max-w-sm mx-auto md:max-w-2xl min-w-0 break-words  bg-white w-[20rem] mb-6 shadow-lg rounded-xl"
+          >
+            <div class="px-6">
+              <div class="flex flex-wrap justify-center">
+                <div class="w-full flex justify-center">
+                  <div class="relative">
+                    <img
+                      class="shadow-lg rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]"
+                      src="/assets/imagens/yuri.png"
+                      alt="foto do yuri"
+                    />
+                  </div>
+                </div>
+                <div class="w-full text-center mt-20">
+                    <div class="flex justify-center lg:pt-4 pt-8 pb-0">
+                      <div class="p-3 text-center">
+                        <span
+                          class="text-xl font-bold block uppercase tracking-wide text-slate-700"
+                          >yuri</span
+                        >
+                        <span class="text-lg text-slate-400">Pessoa Colaboradora I</span>
+                        <ul class="flex flex-row gap-4">
+                            <li class="rounded-full hover:bg-[#7734e7] bg-[#47294c] py-2 px-2.5 transition ease-out delay-75"><a href=""><i class='bx bxl-github text-4xl text-white' ></i></a></li>
+                            <li class="rounded-full hover:bg-[#7734e7] bg-[#47294c] py-2 px-2.5 transition ease-out delay-75"><a href=""><i class='bx bxl-linkedin text-4xl text-white' ></i></a></li>
+                        </ul>
+                      </div>
+              </div>
+            </div>
+          </article>
+  
+                <!--cards-->
+        <article
+        class="relative mt-32 max-w-sm mx-auto md:max-w-2xl min-w-0 break-words  bg-white w-[20rem] mb-6 shadow-lg rounded-xl"
+      >
+        <div class="px-6">
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full flex justify-center">
+              <div class="relative">
+                <img
+                  class="shadow-lg rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]"
+                  src="/assets/imagens/guii.png"
+                  alt="foto do guilherme"
+                />
+              </div>
+            </div>
+            <div class="w-full text-center mt-20">
+                <div class="flex justify-center lg:pt-4 pt-8 pb-0">
+                  <div class="p-3 text-center">
+                    <span
+                      class="text-xl font-bold block uppercase tracking-wide text-slate-700"
+                      >guilherme</span
+                    >
+                    <span class="text-lg text-slate-400">Pessoa Colaboradora II</span>
+                    <ul class="flex flex-row gap-4">
+                        <li class="rounded-full hover:bg-[#7734e7] bg-[#47294c] py-2 px-2.5 transition ease-out delay-75"><a href=""><i class='bx bxl-github text-4xl text-white' ></i></a></li>
+                        <li class="rounded-full hover:bg-[#7734e7] bg-[#47294c] py-2 px-2.5 transition ease-out delay-75"><a href=""><i class='bx bxl-linkedin text-4xl text-white' ></i></a></li>
+                    </ul>
+                  </div>
+          </div>
+        </div>
+      </article>
+</section>
+    </main>
+
+    <!--footer-->
+    <footer class="px-4 py-8 bg-[#7734e7]">
+      <div
+        class="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0"
+      >
+        <div class="flex flex-row pr-3 space-x-4 sm:space-x-8">
+          <div class="flex items-center justify-center flex-shrink-0 w-12 h-12">
+            <img src="/assets/imagens/logo2.png" alt="logo" />
+          </div>
+          <ul class="flex flex-wrap items-center space-x-4 sm:space-x-8">
+            <li>
+              <a class="text-white text-lg" rel="noopener noreferrer" href="#"
+                >Termos de Serviço</a
+              >
+            </li>
+            <li>
+              <a class="text-white text-lg" rel="noopener noreferrer" href="#"
+                >Ajuda</a
+              >
+            </li>
+            <li>
+              <a class="text-white text-lg" rel="noopener noreferrer" href="#"
+                >Fale Conosco</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
+          <li>
+            <a class="text-4xl" rel="noopener noreferrer" href=""
+              ><i class="bx bxl-instagram-alt text-white"></i
+            ></a>
+          </li>
+          <li>
+            <a class="text-4xl" rel="noopener noreferrer" href=""
+              ><i class="bx bxl-facebook-square text-white"></i
+            ></a>
+          </li>
+          <li>
+            <a class="text-4xl" rel="noopener noreferrer" href=""
+              ><i class="bx bxl-twitter text-white"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--scripts-->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
