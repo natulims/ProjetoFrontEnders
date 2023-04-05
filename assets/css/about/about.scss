@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//paleta de cores
+$background-color: #fdfef8;
+$main-text-color: #0a0a0a;
+$details-text-color: #7734e7;
+$title-color: #47294c;
+
+@mixin title() {
+  font-family: "Racing Sans One", cursive;
+  color: $title-color;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include title();
+}
+
+//css global
+* {
+  box-sizing: border-box;
+  color: $main-text-color;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: normal;
+}
+
+body {
+  background-color: $background-color;
+}
