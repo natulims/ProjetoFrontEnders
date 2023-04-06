@@ -1,1 +1,16 @@
-/*# sourceMappingURL=login.css.map */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid #7734e7;
+  width: 32rem;
+  margin-left: 49rem;
+}
+@media (max-width: 480px) {
+  .form {
+    margin-left: -50px;
+    width: 28rem;
+  }
+}/*# sourceMappingURL=login.css.map */

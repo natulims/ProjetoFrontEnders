@@ -30,6 +30,19 @@ h6 {
   color: $main-text-color;
   font-family: "Josefin Sans", sans-serif;
   line-height: normal;
+
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $details-text-color;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $title-color;
+  }
 }
 
 body {

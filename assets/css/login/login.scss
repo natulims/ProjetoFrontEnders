@@ -1,0 +1,21 @@
+//paleta de cores
+$background-color: #fdfef8;
+$main-text-color: #0a0a0a;
+$details-text-color: #7734e7;
+$title-color: #47294c;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  border: 1px solid $details-text-color;
+  width: 32rem;
+  margin-left: 49rem;
+
+  @media (max-width:480px){
+    margin-left: -50px;
+    width: 28rem;
+  }
+}

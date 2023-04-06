@@ -19,6 +19,16 @@ h6 {
   font-family: "Josefin Sans", sans-serif;
   line-height: normal;
 }
+* ::-webkit-scrollbar {
+  width: 15px;
+}
+* ::-webkit-scrollbar-thumb {
+  background: #7734e7;
+  border-radius: 10px;
+}
+* ::-webkit-scrollbar-thumb:hover {
+  background: #47294c;
+}
 
 body {
   background-color: #fdfef8;
