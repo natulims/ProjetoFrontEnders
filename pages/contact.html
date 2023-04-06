@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/assets/imagens/logo1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnders - Contato</title>
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--boxicons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--tailwind-->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav
+      class="relative px-4 py-4 flex justify-between items-center overflow-hidden"
+    >
+      <!--logo-->
+      <a class="leading-none" href="/">
+        <img class="w-10" src="/assets/imagens/logo1.png" alt="logo" />
+      </a>
+
+      <!--div escondida em telas grandes-->
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-[#44195e] p-3">
+          <svg
+            class="block h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!--menu-->
+      <ul
+        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+      >
+        <li>
+          <a
+            class="text-[#44195e] font-bold capitalize text-lg hover:text-[#7734E7]"
+            href="/index.html"
+            >home</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-[#44195e] font-bold capitalize text-lg hover:text-[#7734E7]"
+            href="/pages/about.html"
+            >sobre nós</a
+          >
+        </li>
+
+        <li>
+          <a
+            class="text-[#44195e] font-bold capitalize text-lg hover:text-[#7734E7]"
+            href="/pages/job.html"
+            >vagas</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-[#44195e] font-bold capitalize text-lg hover:text-[#7734E7]"
+            href="/pages/faq.html"
+            >f.a.q</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-[#44195e] font-bold capitalize text-lg hover:text-[#7734E7]"
+            href="/pages/contact.html"
+            >contato</a
+          >
+        </li>
+      </ul>
+      <a
+        class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 hover:text-[#7734e7] uppercase text-sm text-[#44195e] font-bold rounded-xl transition duration-200"
+        href="/pages/login.html"
+        >login</a
+      >
+      <a
+        class="hidden lg:inline-block py-2 px-6 uppercase hover:bg-[#44195e] bg-[#7734e7] text-sm text-white font-bold rounded-xl transition duration-200"
+        href="/pages/signup.html"
+        >cadastro</a
+      >
+    </nav>
+
+    <!--menu responsivo-->
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-white opacity-80"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto"
+      >
+        <div class="flex items-center">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <img class="w-10" src="/assets/imagens/logo1.png" alt="" />
+          </a>
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-[#44195e] cursor-pointer hover:text-[#7734e7]"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="">
+              <a
+                class="block p-4 text-sm font-semibold text-[#44195e] hover:text-[#7734e7] rounded"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="block p-4 text-sm font-semibold text-[#44195e] hover:text-[#7734e7] rounded"
+                href="/pages/about.html"
+                >Sobre Nós</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="block p-4 text-sm font-semibold text-[#44195e] hover:text-[#7734e7] rounded"
+                href="/pages/job.html"
+                >Vagas</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="block p-4 text-sm font-semibold text-[#44195e] hover:text-[#7734e7] rounded"
+                href="/pages/faq.html"
+                >F.A.Q</a
+              >
+            </li>
+
+            <li class="">
+              <a
+                class="block p-4 text-sm font-semibold text-[#44195e] hover:text-[#7734e7] rounded"
+                href="/pages/contact.html"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6">
+            <a
+              class="text-[#44195e] hover:text-[#7734e7] block px-4 py-3 text-lg text-center font-semibold leading-none rounded-xl"
+              href="#"
+              >Login</a
+            >
+            <a
+              class="block px-4 py-3 leading-loose text-lg text-center text-white font-semibold hover:bg-[#44195e] bg-[#7734e7] rounded-xl"
+              href="#"
+              >Cadastro</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--fim do menu-->
+
+    <main class="mt-10 mb-[18rem]">
+      <!--formulario de contato-->
+      <h1 class="text-4xl text-center">Entre em contato conosco</h1>
+      <span
+        class="text-xl text-center flex justify-center items-center mt-1 mb-2"
+        >Possui alguma pergunta? Ou ficou em dúvida sobre algum plano? Nos mande
+        uma mensagem!</span
+      >
+      <div class="w-full md:w-96 md:max-w-full mx-auto">
+        <div
+          class="p-6 border border-b-4 shadow-2xl border-indigo-500 sm:rounded-md"
+        >
+          <form>
+            <label class="block mb-6">
+              <span class="text-gray-700">Nome Completo</span>
+              <input
+                type="text"
+                name="name"
+                class="block w-full mt-1 ring-2 ring-indigo-600 border-gray-300 rounded-md shadow-sm py-4 focus:border-indigo-400 focus:ring focus:ring-indigo-300 focus:ring-opacity-50"
+                placeholder="Ex.: Natalia"
+                required
+              />
+            </label>
+            <label class="block mb-6">
+              <span class="text-gray-700">Email</span>
+              <input
+                name="email"
+                type="email"
+                class="block w-full mt-1 border-gray-300 ring-2 ring-indigo-600 py-4 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                placeholder="Ex.: email@email.com"
+                required
+              />
+            </label>
+            <label class="block mb-6">
+              <span class="text-gray-700">Message</span>
+              <textarea
+                required
+                name="message"
+                class="block resize-none ring-2 ring-indigo-600 w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                rows="10"
+              ></textarea>
+            </label>
+            <div class="lg:ml-24 ml-[6rem]">
+              <button
+                class="bg-[#a279e9] hover:bg-[#9169d6] relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 rounded-md hover:text-white group"
+              >
+                <span
+                  class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease"
+                >
+                  <i class="bx bx-right-arrow-alt h-5 w-5 text-white"></i>
+                </span>
+                <span class="relative text-white">Enviar</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!--fim de formulario de contato-->
+    </main>
+    <!--footer-->
+    <footer class="px-4 mt-10 py-8 bg-[#7734e7]">
+      <div
+        class="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0"
+      >
+        <div class="flex flex-row pr-3 space-x-4 sm:space-x-8">
+          <div class="flex items-center justify-center flex-shrink-0 w-12 h-12">
+            <img src="/assets/imagens/logo2.png" alt="logo" />
+          </div>
+          <ul class="flex flex-wrap items-center space-x-4 sm:space-x-8">
+            <li>
+              <a class="text-white text-lg" rel="noopener noreferrer" href="#"
+                >Termos de Serviço</a
+              >
+            </li>
+            <li>
+              <a class="text-white text-lg" rel="noopener noreferrer" href="#"
+                >Ajuda</a
+              >
+            </li>
+            <li>
+              <a class="text-white text-lg" rel="noopener noreferrer" href="#"
+                >Fale Conosco</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
+          <li>
+            <a class="text-4xl" rel="noopener noreferrer" href=""
+              ><i class="bx bxl-instagram-alt text-white"></i
+            ></a>
+          </li>
+          <li>
+            <a class="text-4xl" rel="noopener noreferrer" href=""
+              ><i class="bx bxl-facebook-square text-white"></i
+            ></a>
+          </li>
+          <li>
+            <a class="text-4xl" rel="noopener noreferrer" href=""
+              ><i class="bx bxl-twitter text-white"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!--scripts-->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
