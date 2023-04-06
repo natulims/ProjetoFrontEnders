@@ -1,5 +1,6 @@
+//menu responsivo
 document.addEventListener("DOMContentLoaded", function () {
-  // open
+  // abrir
   const burger = document.querySelectorAll(".navbar-burger");
   const menu = document.querySelectorAll(".navbar-menu");
 
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // close
+  // fechar
   const close = document.querySelectorAll(".navbar-close");
   const backdrop = document.querySelectorAll(".navbar-backdrop");
 
