@@ -194,13 +194,13 @@
       <section class="login">
         <div class="login__img"><img src="" alt="" /></div>
         <div class="login__form">
-          <h2>Login do Cliente</h2>
-          <span class="text-base text-center"
-            >Não possui conta? Clique <a href="">aqui</a> para criar uma.</span
+          <h2 class="mt-10 text-4xl text-center">Login do Cliente</h2>
+          <span class="flex justify-center text-base text-center"
+            >Não possui conta? Clique<a class="mt-1 indent-2 text-purple-800" href=""> aqui </a>.</span
           >
           <!--formulario-->
           <form class="form">
-            <label class="ml-1 text-lg font-extrabold" for="email">Email</label>
+            <label class="ml-1 mt-10 text-lg font-extrabold" for="email">Email</label>
             <input
               class="py-4 w-80 rounded-md ml-1 ring-2 ring-indigo-600"
               type="text"
@@ -208,10 +208,10 @@
               name="email"
               required
             />
-            <div class="ml-5 mt-2 gap-3 flex flex-col">
+            <!-- <div class="ml-5 mt-2 gap-3 flex flex-col">
               <span class="error">Digite um email válido!</span>
               <span class="error2">Não deixe esse campo em branco!</span>
-            </div>
+            </div> -->
             <label class="ml-1 mt-2 text-lg font-extrabold" for="password"
               >Digite sua senha</label
             >
@@ -222,14 +222,14 @@
               id="password"
               required
             />
-            <div class="ml-5 mt-2 gap-3 flex flex-col">
+            <!-- <div class="ml-5 mt-2 gap-3 flex flex-col">
               <span class="error3">Senha inválida.</span>
               <span class="error4">Por favor preencha esse campo.</span>
-            </div>
+            </div> -->
             <div class="lg:ml-2 ml-2">
               <button
                 onclick="login()"
-                class="bg-[#a279e9] hover:bg-[#9169d6] relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 rounded-md hover:text-white group"
+                class="bg-[#a279e9] mt-5 hover:bg-[#9169d6] relative inline-flex items-center px-12 py-3 overflow-hidden text-lg font-medium text-indigo-600 rounded-md hover:text-white group"
               >
                 <span
                   class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease"
